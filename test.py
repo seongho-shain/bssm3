@@ -13,8 +13,8 @@ firebase_admin.initialize_app(cred, {
 # As an admin, the app has access to read and write all data, regradless of Security Rules
 ref = db.reference('ID')
 print(ref.get())
-ref = db.reference('TEST')
-print(ref.get())
+ref2 = db.reference('TEST')
+print(ref2.get())
 ref.set({
     'alanisawesome': {
         'date_of_birth': 'June 23, 1912',
